@@ -1,3 +1,4 @@
+
 name: Build Android APK
 
 on:
@@ -8,6 +9,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: files/MoyRitm_Namaz_Android_Project
 
     steps:
       - uses: actions/checkout@v4
@@ -30,4 +35,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: moy-ritm-namaz-apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: files/MoyRitm_Namaz_Android_Project/app/build/outputs/apk/debug/app-debug.apk
