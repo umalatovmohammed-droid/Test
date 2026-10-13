@@ -1,0 +1,10 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="13dp" android:background="@drawable/panel" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+<TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="☪  Время намазов" android:textColor="#F5F5F2" android:textSize="17sp" android:textStyle="bold"/>
+<TextView android:id="@+id/location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Астрахань  ⌄" android:textColor="#DDE1E0" android:textSize="12sp" android:padding="8dp"/>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="11dp" android:orientation="horizontal">
+<include layout="@layout/widget_tile1"/><include layout="@layout/widget_tile2"/><include layout="@layout/widget_tile3"/><include layout="@layout/widget_tile4"/><include layout="@layout/widget_tile5"/>
+</LinearLayout>
+<TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#A5B5AE" android:textSize="9sp" android:layout_marginTop="5dp" android:maxLines="1" android:text="Загрузка расписания…"/>
+</LinearLayout>
